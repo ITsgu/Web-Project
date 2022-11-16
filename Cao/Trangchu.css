@@ -17,8 +17,7 @@ li {
     padding-left: 150px;
     padding-right: 150px;
     background-color: #3B3B3B;
-    display: flex;
-    
+    display: flex;   
 }
 .Logo,.GioHang{
     margin: auto;
@@ -47,17 +46,13 @@ li {
     color: #000;
     background-color: #fff  ;
     margin-right: 10px;
-
 }
-
-
 .GioHang button{
     width: 30px;
     height: 30px;
     background-color: #3B3B3B;
     border: none;
 }
-
 .Bottom{
     background-color: #3B3B3B;
     padding: 10px 150px;
@@ -123,14 +118,6 @@ ul.menu_Phukien li  {
     float:left; 
 }
 
-
-
-
-
-
-/* * {
-  box-sizing: border-box;
-} */
 
 img {
   vertical-align: middle;
@@ -325,7 +312,6 @@ img {
   float: left;
   text-align: center;
 }
-
 .GiayTN{
   padding-left: 230px;
   float: left;
