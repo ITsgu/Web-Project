@@ -1,6 +1,9 @@
-body{
+*{
     margin: 0;
-    color: white;
+    padding: 0;
+}
+body{
+    color: antiquewhite;
     font-family:'Courier New', Courier, monospace;
 }
 li {
@@ -14,11 +17,9 @@ li {
     justify-content: space-between;
 }
 .Mid{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 15px 230px;
     background-color: #3B3B3B;
-    display: flex;
-    
+    display: flex;   
 }
 .Logo,.GioHang{
     margin: auto;
@@ -44,32 +45,22 @@ li {
     padding-left: 10px;
 }
 .input i {
-    color: #000;
-    background-color: #fff  ;
     margin-right: 10px;
-
 }
-
-
 .GioHang button{
     width: 30px;
     height: 30px;
     background-color: #3B3B3B;
     border: none;
 }
-
 .Bottom{
     background-color: #3B3B3B;
-    padding: 10px 150px;
+    padding: 10px 200px;
 }
 .Trangchu,.Vechungtoi,.Giaybongda,.Phukien,.Cachchonsize,.Tintuc,.Lienhe{
-    color:antiquewhite;
-    margin: auto;
-    text-align: center;
     float: left;
 }
 a{
-    text-align: left;
     text-decoration: none;
     color: antiquewhite;
     font-size: 20px;
@@ -79,32 +70,31 @@ a{
     justify-content: space-around;
 }
 ul.menu_Giaybongda{
-    padding-top: 15px;
+    padding-left: 10px;
     background-color: #3B3B3B;
-    left: 660px;
     position: absolute;
     width: 230px;
     display: flex;
     flex-direction: column;
 }
 ul.menu_Giaybongda li  {
-    padding: 10px;    
+    margin-right: 10px;
+    margin-top: 10px;
     display: none;
 }
 .Bottom ul li.giaybongda:hover ul.menu_Giaybongda li {
     display: block;
 }
 ul.menu_Phukien{
-    padding-top: 15px;
+    padding-left: 20px;
     background-color: #3B3B3B;
-    left: 900px;
     position: absolute;
     width: 230px;
     display: flex;
     flex-direction: column;
 }
 ul.menu_Phukien li  {
-    padding: 10px;
+    margin-top: 10px;
     display: none;
 }
 .Bottom ul li.MPhukien:hover ul.menu_Phukien li {
@@ -112,24 +102,49 @@ ul.menu_Phukien li  {
 }
 
 ul.menu_TaiKhoan{
-    background-color: #333333;
-    left: 1605px;
-    position: absolute;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-  }
-  ul.menu_TaiKhoan li  {
-    padding: 5px;
-    display: none;
-  }
-  .Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
-    display: block;
-  }
-
-
-
-.boddy{
-    padding: 50px 300px;
+  padding-left: 20px;
+  background-color: #333333;
+  position: absolute;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+ul.menu_TaiKhoan li  {
+  padding: 5px;
+  display: none;
+}
+.Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
+  display: block;
 }
 
+
+
+
+
+
+
+
+.End{
+    padding-top: 40px;
+    background-color: #333333;
+}
+footer{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+}
+.CamOn{
+    padding-top: 20px;
+    width: 31%;
+    float: left;
+  }
+  .Contact{
+    padding-top: 20px;
+    width: 30%;
+    float: left;
+  
+  }
