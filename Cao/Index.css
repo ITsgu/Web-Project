@@ -56,7 +56,7 @@ li {
 }
 .Bottom{
     background-color: #3B3B3B;
-    padding: 10px 20px;
+    padding: 10px 200px;
 }
 .Trangchu,.Vechungtoi,.Giaybongda,.Phukien,.Cachchonsize,.Tintuc,.Lienhe{
     float: left;
@@ -306,8 +306,6 @@ ul.menu_TaiKhoan li  {
   width: 315px;
   height: 300px;
 }
-
-
 .CacLoaiGiay1{
     padding-top: 60px;
     width: 100%;
@@ -356,9 +354,6 @@ ul.menu_TaiKhoan li  {
   width: 425px;
   height: 200px;
 }
-
-
-
 .Thuonghieu{
     padding-top: 50px;
   width: 100%;
@@ -374,7 +369,6 @@ ul.menu_TaiKhoan li  {
     display: flex;
     justify-content: space-around;
 }
-
 .Nike{
 
   float: left;
@@ -382,37 +376,30 @@ ul.menu_TaiKhoan li  {
   height: 150px;
 }
 .Adidas{
-
   float: left;
   width: 425px;
   height: 150px;
 }
 .Puma{
-
   float: left;
   width: 425px;
   height: 150px;
 }
 .Mizuno{
-
   float: left;
   width: 425px;
   height: 250px;
 }
 .Asics{
-
   float: left;
   width: 425px;
   height: 250px;
 }
 .Kamito{
-
   float: left;
   width: 425px;
   height: 250px;
 }
-
-
 .End{
     padding-top: 40px;
     background-color: #333333;
@@ -426,14 +413,11 @@ footer{
     float: left;
     width: 100%;
 }
-
 .CamOn{
     padding-top: 20px;
     width: 31%;
     float: left;
-  
   }
-  
   .Contact{
     padding-top: 20px;
     width: 30%;
