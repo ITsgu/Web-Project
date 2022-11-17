@@ -111,6 +111,21 @@ ul.menu_Phukien li  {
     display: block;
 }
 
+ul.menu_TaiKhoan{
+    background-color: #333333;
+    left: 1605px;
+    position: absolute;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+  }
+  ul.menu_TaiKhoan li  {
+    padding: 5px;
+    display: none;
+  }
+  .Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
+    display: block;
+  }
 
 
 

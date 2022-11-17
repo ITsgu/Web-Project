@@ -1,6 +1,10 @@
-body{
+
+*{
     margin: 0;
-    color: white;
+    padding: 0;
+}
+body{
+    color: antiquewhite;
     font-family:'Courier New', Courier, monospace;
 }
 li {
@@ -14,8 +18,7 @@ li {
     justify-content: space-between;
 }
 .Mid{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 15px 230px;
     background-color: #3B3B3B;
     display: flex;   
 }
@@ -43,8 +46,6 @@ li {
     padding-left: 10px;
 }
 .input i {
-    color: #000;
-    background-color: #fff  ;
     margin-right: 10px;
 }
 .GioHang button{
@@ -55,16 +56,12 @@ li {
 }
 .Bottom{
     background-color: #3B3B3B;
-    padding: 10px 150px;
+    padding: 10px 20px;
 }
 .Trangchu,.Vechungtoi,.Giaybongda,.Phukien,.Cachchonsize,.Tintuc,.Lienhe{
-    color:antiquewhite;
-    margin: auto;
-    text-align: center;
     float: left;
 }
 a{
-    text-align: left;
     text-decoration: none;
     color: antiquewhite;
     font-size: 20px;
@@ -74,85 +71,97 @@ a{
     justify-content: space-around;
 }
 ul.menu_Giaybongda{
-    padding-top: 15px;
+    padding-left: 10px;
     background-color: #3B3B3B;
-    left: 660px;
     position: absolute;
     width: 230px;
     display: flex;
     flex-direction: column;
 }
 ul.menu_Giaybongda li  {
-    padding: 10px;    
+    margin-right: 10px;
+    margin-top: 10px;
     display: none;
 }
 .Bottom ul li.giaybongda:hover ul.menu_Giaybongda li {
     display: block;
 }
 ul.menu_Phukien{
-    padding-top: 15px;
+    padding-left: 20px;
     background-color: #3B3B3B;
-    left: 900px;
     position: absolute;
     width: 230px;
     display: flex;
     flex-direction: column;
 }
 ul.menu_Phukien li  {
-    padding: 10px;
+    margin-top: 10px;
     display: none;
 }
 .Bottom ul li.MPhukien:hover ul.menu_Phukien li {
     display: block;
 }
+
+ul.menu_TaiKhoan{
+  padding-left: 20px;
+  background-color: #333333;
+  position: absolute;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+ul.menu_TaiKhoan li  {
+  padding: 5px;
+  display: none;
+}
+.Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
+  display: block;
+}
+.boddy{
+    margin: 0px 200px;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+.SaleHot{
+    display: flex;
+    justify-content: space-between;
+}
 .Sale{
-    padding-left: 130px;
+    position: relative;
     text-align: center;
-    width: 40%;
+    width: 45%;
     float:left;
 }
 .Hot{
-    padding-left: 100px;
     text-align: center;
-    width: 40%;
+    width: 45%;
     float:left; 
 }
-
-
-img {
-  vertical-align: middle;
-}
-
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
+  top: 30%;
+  padding: 15px;
   color: white;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
 }
 /* Position the "next button" to the right */
 .next {
@@ -163,24 +172,11 @@ img {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #3B3B3B; */
-  color: antiquewhite;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* Container for image text */
 .caption-container {
   text-align: center;
@@ -188,47 +184,37 @@ img {
   padding: 2px 16px;
   color: antiquewhite;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
 }
 
-
-
-
 /* Position the image container (needed to position the left and right arrows) */
 .container2 {
   position: relative;
 }
-
 /* Hide the images by default */
 .mySlides2 {
   display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor2 {
   cursor: pointer;
 }
-
 /* Next & previous buttons */
 .prev2,
 .next2 {
@@ -254,24 +240,11 @@ img {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev2:hover,
 .next2:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* Number text (1/3 etc) */
-.numbertext2 {
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #3B3B3B; */
-  color: antiquewhite;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* Container for image text */
 .caption-container2 {
   text-align: center;
@@ -279,104 +252,107 @@ img {
   padding: 2px 16px;
   color: antiquewhite;
 }
-
 .row2:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Six columns side by side */
 .column2 {
   float: left;
   width: 16.66%;
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo2 {
   opacity: 0.6;
 }
-
 .active2,
 .demo2:hover {
   opacity: 1;
 }
-
-
 .boddy{
   color: #3B3B3B;
 }
-
 .BanDangTim{
+  padding-top: 60px;
   width: 100%;
-  float: left;
+  /* display: flex;
+  justify-content: space-around; */
+  text-align: center;
+}
+.CacLoaiGiay{
+    padding-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 .GiayTN{
-  padding-left: 230px;
   float: left;
   width: 315px;
   height: 300px;
 }
 .GiayNT{
-  padding-left: 55px;
   float: left;
   width: 315px;
   height: 300px;
 }
 .GiayFS{
-  padding-left: 55px;
   float: left;
   width: 315px;
   height: 300px;
 }
 .GiaySL{
-  padding-left: 55px;
   float: left;
   width: 315px;
   height: 300px;
 }
 
 
-
+.CacLoaiGiay1{
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+.Giay1{
+    display: flex;
+    justify-content: space-around;
+}
+.Giay2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
 .Giaytreem{
-  padding-top: 70px;
-  padding-left: 275px;
   float: left;
   width: 425px;
   height: 150px;
 }
 .Aodabanh{
-  padding-top: 70px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
   height: 150px;
 }
 .Quabongda{
-  padding-top: 70px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
   height: 150px;
 }
 .Vodabanh{
-  padding-top: 60px;
-  padding-left: 275px;
+
   float: left;
   width: 425px;
   height: 200px;
 }
 .Baoveongdong{
-  padding-top: 60px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
   height: 200px;
 }
 .Phukienrasan{
-  padding-top: 60px;
-  padding-left: 35px;
   float: left;
   width: 425px;
   height: 200px;
@@ -385,52 +361,83 @@ img {
 
 
 .Thuonghieu{
+    padding-top: 50px;
   width: 100%;
-  float: left;
   text-align: center;
+}
+.Thuonghieu1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.Thuonghieu2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .Nike{
-  padding-top: 0px;
-  padding-left: 275px;
+
   float: left;
   width: 425px;
   height: 150px;
 }
 .Adidas{
-  padding-top: 0px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
   height: 150px;
 }
 .Puma{
-  padding-top: 0px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
   height: 150px;
 }
 .Mizuno{
-  padding-top: 60px;
-  padding-left: 275px;
+
   float: left;
   width: 425px;
-  height: 300px;
+  height: 250px;
 }
 .Asics{
-  padding-top: 60px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
-  height: 300px;
+  height: 250px;
 }
 .Kamito{
-  padding-top: 60px;
-  padding-left: 35px;
+
   float: left;
   width: 425px;
-  height: 300px;
+  height: 250px;
 }
 
 
+.End{
+    padding-top: 40px;
+    background-color: #333333;
+}
+footer{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+}
+
+.CamOn{
+    padding-top: 20px;
+    width: 31%;
+    float: left;
+  
+  }
+  
+  .Contact{
+    padding-top: 20px;
+    width: 30%;
+    float: left;
+  
+  }
