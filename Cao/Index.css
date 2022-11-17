@@ -274,14 +274,13 @@ ul.menu_TaiKhoan li  {
   color: #3B3B3B;
 }
 .BanDangTim{
-  padding-top: 60px;
+  padding-top: 30px;
   width: 100%;
   /* display: flex;
   justify-content: space-around; */
   text-align: center;
 }
 .CacLoaiGiay{
-    padding-top: 60px;
   width: 100%;
   display: flex;
   justify-content: space-around;
