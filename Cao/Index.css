@@ -56,9 +56,9 @@ li {
 }
 .Bottom{
     background-color: #3B3B3B;
-    padding: 10px 200px;
+    padding: 10px 385px;
 }
-.Trangchu,.Vechungtoi,.Giaybongda,.Phukien,.Cachchonsize,.Tintuc,.Lienhe{
+.Trangchu,.Giaybongda,.Phukien,.Cachchonsize{
     float: left;
 }
 a{
@@ -70,38 +70,6 @@ a{
     display: flex;
     justify-content: space-around;
 }
-ul.menu_Giaybongda{
-    padding-left: 10px;
-    background-color: #3B3B3B;
-    position: absolute;
-    width: 230px;
-    display: flex;
-    flex-direction: column;
-}
-ul.menu_Giaybongda li  {
-    margin-right: 10px;
-    margin-top: 10px;
-    display: none;
-}
-.Bottom ul li.giaybongda:hover ul.menu_Giaybongda li {
-    display: block;
-}
-ul.menu_Phukien{
-    padding-left: 20px;
-    background-color: #3B3B3B;
-    position: absolute;
-    width: 230px;
-    display: flex;
-    flex-direction: column;
-}
-ul.menu_Phukien li  {
-    margin-top: 10px;
-    display: none;
-}
-.Bottom ul li.MPhukien:hover ul.menu_Phukien li {
-    display: block;
-}
-
 ul.menu_TaiKhoan{
   padding-left: 20px;
   background-color: #333333;
@@ -301,74 +269,19 @@ ul.menu_TaiKhoan li  {
   width: 315px;
   height: 300px;
 }
-.GiaySL{
-  float: left;
-  width: 315px;
-  height: 300px;
-}
-.CacLoaiGiay1{
-    padding-top: 60px;
-    width: 100%;
-    text-align: center;
-}
-.Giay1{
-    display: flex;
-    justify-content: space-around;
-}
-.Giay2{
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-.Giaytreem{
-  float: left;
-  width: 425px;
-  height: 150px;
-}
-.Aodabanh{
-
-  float: left;
-  width: 425px;
-  height: 150px;
-}
-.Quabongda{
-
-  float: left;
-  width: 425px;
-  height: 150px;
-}
-.Vodabanh{
-
-  float: left;
-  width: 425px;
-  height: 200px;
-}
-.Baoveongdong{
-
-  float: left;
-  width: 425px;
-  height: 200px;
-}
-.Phukienrasan{
-  float: left;
-  width: 425px;
-  height: 200px;
-}
+  
 .Thuonghieu{
-    padding-top: 50px;
+  padding-top:90px;
   width: 100%;
   text-align: center;
 }
 .Thuonghieu1{
-    padding-top: 30px;
+  padding-top: 30px;
+    padding-bottom: 90px;
     display: flex;
     justify-content: space-around;
 }
-.Thuonghieu2{
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
+
 .Nike{
 
   float: left;
@@ -384,21 +297,6 @@ ul.menu_TaiKhoan li  {
   float: left;
   width: 425px;
   height: 150px;
-}
-.Mizuno{
-  float: left;
-  width: 425px;
-  height: 250px;
-}
-.Asics{
-  float: left;
-  width: 425px;
-  height: 250px;
-}
-.Kamito{
-  float: left;
-  width: 425px;
-  height: 250px;
 }
 .End{
     padding-top: 40px;
