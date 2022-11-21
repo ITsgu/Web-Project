@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 25px 320px;
+}
+
+.Top{
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    background-color: rgb(224, 114, 114);
+}
+
+.Mid{
+    margin: 15px 0px;
+    background-color: #3B3B3B;
+    padding: 10px 200px;
+}
+li {
+    list-style: none;
+}
+.Mid ul  {
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 25px;
+}

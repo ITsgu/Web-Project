@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 25px 320px;
+}
+
+.Top{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    background-color: rgb(224, 114, 114);
+}
+
+.Mid{
+    background-color: #3B3B3B;
+    padding: 10px 200px;
+    margin: 15px 0px;
+}
+li {
+    list-style: none;
+}
+.Mid ul  {
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 25px;
+}
+.content {
+    margin-bottom: 15px;
+    padding: 13px 30px;
+    color: antiquewhite;
+    background-color: #333333;
+}
+.BinhLuan table{ 
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px #999 solid;
+}
+.BinhLuan table th{
+    padding: 13px 0px;
+}
+.BinhLuan table th:nth-child(1){
+    width: 20%;
+    background-color: #ccc;
+
+}
+.BinhLuan table th:nth-child(2){
+    width: 20%;
+    background-color: #ccc;
+
+}
+.BinhLuan table th:nth-child(3){
+    width: 25%;
+    background-color: #ccc;
+
+}
+.BinhLuan table th:nth-child(4){
+    width: 5%;
+    background-color: #ccc;
+
+}
+.BinhLuan table th:nth-child(5){
+    width: 25%;
+    background-color: #ccc;
+
+}
+.BinhLuan table th:nth-child(6){
+    width: 15%;
+    background-color: #ccc;
+
+}
+
+.BinhLuan table td{
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px #999 solid;
+
+}
+.BinhLuan input{
+    border-radius: 5px;
+    background-color: rgb(247, 229, 229);
+    border: 1px #fff solid;
+    padding: 10px;
+    font-size: 15px;
+}
+input[type="button"]:hover{
+    background-color: #cabbbb;
+}
+textarea {
+    font-size: 14px;
+    resize: none;
+}
