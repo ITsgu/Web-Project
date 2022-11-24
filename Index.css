@@ -1,0 +1,458 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+}
+li {
+    list-style: none;
+}
+.Top{
+    color:antiquewhite;
+    font-size: 15px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+.Mid{
+    padding: 15px 230px;
+    background-color: #3B3B3B;
+    display: flex;   
+}
+.Logo,.GioHang{
+    margin: auto;
+    float: left;
+}
+.TimKiem{
+    margin:  auto;
+    float: left;
+    display: flex;
+}
+
+.TimKiem .input{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.input button {
+    background-color: #fff;
+    border: none;
+}
+.input .otimkiem {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.input i {
+    margin-right: 10px;
+}
+.GioHang button{
+    width: 30px;
+    height: 30px;
+    background-color: #3B3B3B;
+    border: none;
+}
+.Bottom{
+    background-color: #3B3B3B;
+    padding: 10px 385px;
+}
+.Trangchu,.Giaybongda,.Phukien,.Cachchonsize{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.Bottom ul  {
+    display: flex;
+    justify-content: space-around;
+}
+ul.menu_TaiKhoan{
+  padding-left: 20px;
+  background-color: #333333;
+  position: absolute;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+ul.menu_TaiKhoan li  {
+  padding: 5px;
+  display: none;
+}
+.Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
+  display: block;
+}
+.boddy{
+    margin: 0px 200px;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+.SaleHot{
+    display: flex;
+    justify-content: space-between;
+}
+.Sale{
+    position: relative;
+    text-align: center;
+    width: 45%;
+    float:left;
+}
+.Hot{
+    text-align: center;
+    width: 45%;
+    float:left; 
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  /* -webkit-user-select: none; */
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #3B3B3B;
+  padding: 2px 16px;
+  color: antiquewhite;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor2 {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev2 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Container for image text */
+.caption-container2 {
+  text-align: center;
+  background-color: #3B3B3B;
+  padding: 2px 16px;
+  color: antiquewhite;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+.column2 {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo2 {
+  opacity: 0.6;
+}
+.active2,
+.demo2:hover {
+  opacity: 1;
+}
+.boddy{
+  color: #3B3B3B;
+}
+.BanDangTim{
+  padding-top: 30px;
+  width: 100%;
+  /* display: flex;
+  justify-content: space-around; */
+  text-align: center;
+}
+.CacLoaiGiay{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.GiayTN{
+  float: left;
+  width: 315px;
+  height: 300px;
+}
+.GiayNT{
+  float: left;
+  width: 315px;
+  height: 300px;
+}
+.GiayFS{
+  float: left;
+  width: 315px;
+  height: 300px;
+}
+
+.Thuonghieu{
+  padding-top:90px;
+  width: 100%;
+  text-align: center;
+}
+.Thuonghieu1{
+  padding-top: 30px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+.Nike{
+
+  float: left;
+  width: 425px;
+  height: 150px;
+}
+.Adidas{
+  float: left;
+  width: 425px;
+  height: 150px;
+}
+.Puma{
+  float: left;
+  width: 425px;
+  height: 150px;
+}
+.End{
+    padding-top: 40px;
+    background-color: #333333;
+}
+footer{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+}
+.CamOn{
+    padding-top: 20px;
+    width: 31%;
+    float: left;
+  }
+  .Contact{
+    padding-top: 20px;
+    width: 30%;
+    float: left;
+  
+  }
+
+
+/*-------------------------Cart Page------------------------------*/
+/*-----------------Gợi ý sản phẩm thêm vào giỏ hàng---------------*/
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+.product_items{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(59, 59, 59);
+  padding: 12px;
+}
+.product_item{
+  width: 19%;
+  background-color: rgb(241, 112, 92);
+  padding: 12px;
+  text-align: center;
+}
+.product_item img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.product_item_button{
+  background: #f23f2f;
+  color: #fff;
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3 ease;
+}
+
+.cart_page{
+  margin: 80px auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+table tr td{
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0px;
+}
+.cart_info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 12px 0px;
+  color:rgb(0, 0, 0);
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+td{
+  padding: 10px 10px;
+  font-weight: bold;
+}
+strong{
+  color: rgb(201, 153, 77);
+}
+td input{
+  width:40px;
+  height: 30px;
+  padding: 5px ;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+}
+td a{
+  color: #ff523b;
+  font-size: 15px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+  text-align: right;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+.cart_info p{
+  display: none;
+}
+
+
+/*-----------------------Cập nhật, thanh toán---------------------------*/
+#checkout {
+    float: right;
+    margin-left: 15px;
+}
+.button-default {
+    background: #f23f2f;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    cursor: pointer;
+    margin: 7px;
+}
+.button-default:before {
+	content: "";
+	width: 100px;
+	height: 0%;
+	position: absolute;
+	right: 450px;
+}
+.button-default:after {
+	content: "";
+	background: url(//hstatic.net/0/0/global/design/theme-default/icon-arr.png) no-repeat center right;
+	width: 30px;
+	height: 100%;
+	float: right;
+	margin-left: 10px;
+}
