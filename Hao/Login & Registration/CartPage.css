@@ -1,0 +1,134 @@
+
+/*-------------------------Cart Page------------------------------*/
+/*-----------------Gợi ý sản phẩm thêm vào giỏ hàng---------------*/
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+.product_items{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(59, 59, 59);
+  padding: 12px;
+}
+.product_item{
+  width: 19%;
+  background-color: rgb(241, 112, 92);
+  padding: 12px;
+  text-align: center;
+}
+.product_item img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.product_item_button{
+  background: #f23f2f;
+  color: #fff;
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3 ease;
+}
+
+.cart_page{
+  margin: 80px auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+table tr td{
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0px;
+}
+.cart_info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 12px 0px;
+  color:rgb(0, 0, 0);
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+td{
+  padding: 10px 10px;
+  font-weight: bold;
+}
+strong{
+  color: rgb(201, 153, 77);
+}
+td input{
+  width:40px;
+  height: 30px;
+  padding: 5px ;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+}
+td a{
+  color: #ff523b;
+  font-size: 15px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+  text-align: right;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+.cart_info p{
+  display: none;
+}
+
+
+/*-----------------------Cập nhật, thanh toán---------------------------*/
+#checkout {
+    float: right;
+    margin-left: 15px;
+}
+.button-default {
+    background: #f23f2f;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    cursor: pointer;
+    margin: 7px;
+}
+.button-default:before {
+	content: "";
+	width: 100px;
+	height: 0%;
+	position: absolute;
+	right: 450px;
+}
+.button-default:after {
+	content: "";
+	background: url(//hstatic.net/0/0/global/design/theme-default/icon-arr.png) no-repeat center right;
+	width: 30px;
+	height: 100%;
+	float: right;
+	margin-left: 10px;
+}
