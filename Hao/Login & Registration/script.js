@@ -32,3 +32,7 @@ const container = document.querySelector(".container"),
     login.addEventListener("click", ( )=>{
         container.classList.remove("active");
     });
+
+    app.route('/*').get(function(req, res) { 
+    return res.sendFile(path.join(__dirname, 'public/index.html')); 
+});
