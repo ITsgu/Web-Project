@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+li {
+    list-style: none;
+}
+.Admin{
+    border-radius: 45px;
+    padding: 40px 35px;
+    width: 15%;
+    float: left;
+    background-color: rgb(83, 82, 82);
+    height: 300px;
+    margin: 25px;
+}
+.Admin h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 45px;
+}
+.Admin li{
+    margin:20px 0px;
+}
+.Container{
+    margin-left: 20px;
+    width: 75%;
+    float: left;
+}
+.Top{
+    padding-top: 20px;
+    padding-right: 70px;
+    padding-left: 1230px;
+    padding-bottom: 30px;
+    text-align: right;
+}
+.Top li{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+#Out:hover{
+    color: aquamarine;
+}
+.Content{
+    margin: 10px 40px;
+    padding: 15px;
+    border-bottom: 1px solid #7e7c7c;
+    border-top: 1px solid #7e7c7c;
+    text-align: center;
+    font-size: 60px;
+}
+.ThongTin{
+    margin-top: 50px;
+}
+.ThongTin table{ 
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px #999 solid;
+}
+.ThongTin table th{
+    padding: 13px 0px;
+}
+.ThongTin table th:nth-child(1){
+    width: 15%;
+    background-color: #ccc;
+
+}
+.ThongTin table th:nth-child(2){
+    width: 12%;
+    background-color: #ccc;
+
+}
+.ThongTin table th:nth-child(3){
+    width: 28%;
+    background-color: #ccc;
+
+}
+.ThongTin table th:nth-child(4){
+    width: 25%;
+    background-color: #ccc;
+
+}
+.ThongTin table th:nth-child(5){
+    width: 12%;
+    background-color: #ccc;
+
+}
+.ThongTin table th:nth-child(6){
+    width: 8%;
+    background-color: #ccc;
+
+}
+.ThongTin table td{
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px #999 solid;
+
+}

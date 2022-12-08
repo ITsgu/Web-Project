@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="KhachHang2.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+    <title>Admin</title>
+</head>
+<script>
+    function changeIcon(ic) {
+        ic.classList.toggle('fa-user-lock')
+    }
+
+    
+    function changeIcon1 (ic){
+        ic.classList.toggle('fa-lock-open')
+    }
+
+    </script>
+<body>
+    <div class="Top">
+        <div class="row1">
+            <ul>
+                <li>
+                    <h1>Admin</h1>
+                </li>
+                <li style="margin:auto"><a href="">Khách hàng</a></li>
+                <li style="margin:auto"><a href="">Sản phẩm</a></li>
+                <li style="margin:auto"><a href="">Đơn hàng</a></li>
+                <li style="margin:auto"><a href="">Thống kê</a></li>
+            </ul>
+        </div>
+        <div class="row2">
+            <ul>
+                <li style="margin-bottom: 10px">Xin chào Admin</li>
+                <li id="Out"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</li>
+            </ul>
+        </div>
+    </div>
+    <div class="Bottom">
+        <div class="Content">
+            Quản lý khách hàng
+        </div>
+        <div class="ThongTin">
+            <table>
+                <tr>
+                    <th >Tên đăng nhập</th>
+                    <th >Mật khẩu</th>
+                    <th >Email</th>
+                    <th >Họ và tên</th>
+                    <th >Số điện thoại</th>
+                    <th >Địa chỉ</th>
+                    <th>Khóa</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa-solid fa-lock-open" onclick="changeIcon(this)"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa-solid fa-lock-open" onclick="changeIcon(this)"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa-solid fa-lock-open" onclick="changeIcon(this)"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa-solid fa-lock-open" onclick="changeIcon(this)"></i>
+                    </td>                        
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
