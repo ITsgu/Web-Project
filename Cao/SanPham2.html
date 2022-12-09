@@ -15,10 +15,10 @@
                 <li>
                     <h1>Admin</h1>
                 </li>
-                <li style="margin:auto"><a href="">Khách hàng</a></li>
-                <li style="margin:auto"><a href="">Sản phẩm</a></li>
-                <li style="margin:auto"><a href="">Đơn hàng</a></li>
-                <li style="margin:auto"><a href="">Thống kê</a></li>
+                <li style="margin:auto"><a href="KhachHang2.html">Khách hàng</a></li>
+                <li style="margin:auto"><a href="#">Sản phẩm</a></li>
+                <li style="margin:auto"><a href="DonHang2.html">Đơn hàng</a></li>
+                <li style="margin:auto"><a href="ThongKe2.html">Thống kê</a></li>
             </ul>
         </div>
         <div class="row2">
@@ -33,7 +33,7 @@
             Quản lý sản phẩm
         </div>
         <div class="ThongTin1">
-        <table class="adc">
+        <table class="Table1">
             <tr>
                 <th >Mã sản phẩm</th>
                 <th >Hình ảnh</th>
@@ -45,44 +45,56 @@
                 <th >Sửa</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>0001</td>
+                <td><img src="HinhAnh/ADIDAS COPA SENSE .1 TF SAPPHIRE EDGE navy black.jpg" alt=""></td>
+                <td>ADIDAS COPA SENSE .1 TF SAPPHIRE EDGE - NAVY BLUE/FOOTWEAR WHITE/BLUE RUSH</td>
+                <td>Còn hàng</td>
+                <td>2,750,000</td>
+                <td>453</td>
+                <td>Adidas</td>
+                <td>
+                    <i class="fa-solid fa-trash-can fa-xl" style="margin-right: 5px;"></i>
+                    <i class="fa-solid fa-pen-to-square fa-xl"></i>
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>0002</td>
+                <td><img src="HinhAnh/ADIDAS COPA SENSE .1 TF WHITESPARK white.jpg" alt=""></td>
+                <td>ADIDAS COPA SENSE .1 TF WHITESPARK - FOOTWEAR WHITE/SOLAR RED/IRON METAL</td>
+                <td>Còn hàng</td>
+                <td>2,750,000</td>
+                <td>57</td>
+                <td>Adidas</td>
+                <td>
+                    <i class="fa-solid fa-trash-can fa-xl" style="margin-right: 5px;"></i>
+                    <i class="fa-solid fa-pen-to-square fa-xl"></i>
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>0003</td>
+                <td><img src="HinhAnh/ADIDAS MESSI 16.1 FG TURBOCHARGE.jpg" alt=""></td>
+                <td>ADIDAS MESSI 16.1 FG TURBOCHARGE - COPPER METALLIC/CORE BLACK/SOLAR GREEN</td>
+                <td>Còn hàng</td>
+                <td>1,500,000</td>
+                <td>67</td>
+                <td>Adidas</td>
+                <td>
+                    <i class="fa-solid fa-trash-can fa-xl" style="margin-right: 5px;"></i>
+                    <i class="fa-solid fa-pen-to-square fa-xl"></i>
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>                        
+                <td>0004</td>
+                <td><img src="HinhAnh/ADIDAS PREDATOR EDGE .3 LOW TF AL RIHLA white.jpg" alt=""></td>
+                <td>ADIDAS PREDATOR EDGE .3 LOW FG AL RIHLA - FOOTWEAR WHITE/SOLAR YELLOW/POWER BLUE</td>
+                <td>Còn hàng</td>
+                <td>1,980,000</td>
+                <td>47</td>
+                <td>Adidas</td>
+                <td>
+                    <i class="fa-solid fa-trash-can fa-xl" style="margin-right: 5px;"></i>
+                    <i class="fa-solid fa-pen-to-square fa-xl"></i>
+                </td>                        
             </tr>
         </table>
         </div>
@@ -99,7 +111,8 @@
             </div>
             <div>
                 <label for="">Hình ảnh: </label>
-                <input type="file" accept="fakepath/*"  id="Anh">
+                <input type="file" id="Anh" name="file_name" onchange="theimage();">
+                <input type="text" name="file_path" id="file-path" style="display: none;">          
             </div>
             <div>
                 <label for="">Tên: </label>
@@ -183,7 +196,6 @@
             }
 
 
-
             let index = data.findIndex((c)=>c.Code==itemp.Code)
 
             if(index>=0){
@@ -207,17 +219,20 @@
                     <th >Sửa</th>
                 </tr>`
                 for(let i=0;i<data.length;i++){
+                    var tempp =document.getElementById("file-path").value
+                    document.getElementById("file-path").value = data[i].Anh;
+                    data[i].Anh=tempp
                     table += `<tr>
                     <td>${data[i].Code}</td>
-                    <td><img src=" ${data[i].Anh}" ></img></td>
+                    <td><img src="HinhAnh/${data[i].Anh}" style="width:300px;height:200px"></td>
                     <td>${data[i].Ten}</td>
                     <td>${data[i].Kho}</td>
                     <td>${data[i].Gia}</td>
                     <td>${data[i].Slg}</td>
                     <td>${data[i].DanhMuc}</td>
                     <td>
-                        <button onclick="deleteItemp(${data[i].Code})">Xoa</button>
-                        <button onclick="editItemp(${data[i].Code})">Sua</button>
+                        <button onclick="deleteItemp(${data[i].Code})" style="width:40px;height:40px;border-radius: 10px;"><i class="fa-solid fa-trash-can"></i></button>
+                        <button onclick="editItemp(${data[i].Code})" style="width:40px;height:40px;border-radius: 10px;"><i class="fa-solid fa-pen-to-square"></i></button>
                     </td>
                 </tr>`
                 }
@@ -259,6 +274,11 @@
                 }
             }
         }
+        function theimage(){
+    var filename = document.getElementById("Anh").files[0].name;
+    document.getElementById('file-path').value = filename;
+
+}
 
 
     </script>
