@@ -62,6 +62,70 @@
             </ul>
         </div>
     </div>
+    <div class="slideshow-container3">
+
+        <div class="mySlides3 fade">
+          <img src="HinhAnh/Index1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides3 fade">
+          <img src="HinhAnh/Index2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides3 fade">
+          <img src="HinhAnh/Index3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides3 fade">
+            <img src="HinhAnh/Index4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides3 fade">
+            <img src="HinhAnh/Index5.png" style="width:100%">
+          </div>
+        
+        <a class="prev3" onclick="plusSlides3(-1)">❮</a>
+        <a class="next3" onclick="plusSlides3(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide3(1)"></span> 
+          <span class="dot" onclick="currentSlide3(2)"></span> 
+          <span class="dot" onclick="currentSlide3(3)"></span> 
+          <span class="dot" onclick="currentSlide3(4)"></span>
+          <span class="dot" onclick="currentSlide3(5)"></span>
+        </div>
+        
+        <script>
+        let slideIndex3 = 1;
+        showSlides3(slideIndex3);
+        
+        function plusSlides3(n) {
+          showSlides3(slideIndex3 += n);
+        }
+        
+        function currentSlide3(n) {
+          showSlides3(slideIndex3 = n);
+        }
+        
+        function showSlides3(n) {
+          let i;
+          let slides3 = document.getElementsByClassName("mySlides3");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides3.length) {slideIndex3 = 1}    
+          if (n < 1) {slideIndex3 = slides3.length}
+          for (i = 0; i < slides3.length; i++) {
+            slides3[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides3[slideIndex3-1].style.display = "block";  
+          dots[slideIndex3 -1].className += " active";
+        }
+        </script>
     <div class="boddy">
         <div class="SaleHot">
             <div class="Sale">
