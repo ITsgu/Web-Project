@@ -23,7 +23,7 @@
                   <ul class="menu_TaiKhoan">
                     <li><a href="" style="font-size: 16px;">Đăng kí</a></li>
                     <li><a href="" style="font-size: 16px;">Đăng nhập</a></li>
-                    <li><a href="" style="font-size: 16px;">Giỏ hàng</a></li>
+                    <li><a href="CartPage.html" style="font-size: 16px;">Giỏ hàng</a></li>
                     <li><a href="" style="font-size: 16px;">Thanh toán</a></li>
                 </ul>
                 </li>
@@ -52,10 +52,10 @@
         <div class="Bottom">
             <ul>
                 <li>
-                    <a href="">Trang chủ</a>
+                    <a href="#">Trang chủ</a>
                 </li>
                 <li class="giaybongda">
-                    <a  href="">Giày bóng đá</a> 
+                    <a  href="SpGiayNT1.html">Giày bóng đá</a> 
                 </li>
                 <li class="MPhukien">
                     <a href="">Phụ kiện</a>
@@ -66,6 +66,70 @@
             </ul>
         </div>
     </div>
+    <div class="slideshow-container3">
+
+        <div class="mySlides3 fade">
+          <img src="HinhAnh/Index1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides3 fade">
+          <img src="HinhAnh/Index2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides3 fade">
+          <img src="HinhAnh/Index3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides3 fade">
+            <img src="HinhAnh/Index4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides3 fade">
+            <img src="HinhAnh/Index5.png" style="width:100%">
+          </div>
+        
+        <a class="prev3" onclick="plusSlides3(-1)">❮</a>
+        <a class="next3" onclick="plusSlides3(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide3(1)"></span> 
+          <span class="dot" onclick="currentSlide3(2)"></span> 
+          <span class="dot" onclick="currentSlide3(3)"></span> 
+          <span class="dot" onclick="currentSlide3(4)"></span>
+          <span class="dot" onclick="currentSlide3(5)"></span>
+        </div>
+        
+        <script>
+        let slideIndex3 = 1;
+        showSlides3(slideIndex3);
+        
+        function plusSlides3(n) {
+          showSlides3(slideIndex3 += n);
+        }
+        
+        function currentSlide3(n) {
+          showSlides3(slideIndex3 = n);
+        }
+        
+        function showSlides3(n) {
+          let i;
+          let slides3 = document.getElementsByClassName("mySlides3");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides3.length) {slideIndex3 = 1}    
+          if (n < 1) {slideIndex3 = slides3.length}
+          for (i = 0; i < slides3.length; i++) {
+            slides3[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides3[slideIndex3-1].style.display = "block";  
+          dots[slideIndex3 -1].className += " active";
+        }
+        </script>
     <div class="boddy">
         <div class="SaleHot">
             <div class="Sale">
@@ -247,7 +311,7 @@
         <div class="BanDangTim">
             <div class="CacLoaiGiay">
                 <div class="GiayTN">
-                    <a href="">
+                    <a href="SpGiayTN1.html">
                         <img src="HinhAnh/GiayTN.jpg" style="width: 312px;height: 312px;">
                         <p style="text-align: center;color:black;font-size: 15px;"><b>GIÀY CỎ TỰ NHIÊN (ĐẾ FG, AG, SG)</b> </p>
                     </a>
@@ -259,7 +323,7 @@
                     </a>
                 </div>
                 <div class="GiayFS">
-                    <a href="">
+                    <a href="SpGiayFS.html">
                         <img src="HinhAnh/GiayFS.jpg" style="width: 312px;height: 312px;">
                         <p style="text-align: center;color:black;font-size: 15px"><b>GIÀY FUTSAL (ĐẾ IC)</b> </p>
                     </a>
@@ -269,19 +333,19 @@
                 <p style="font-size: 45px;">Thương hiệu</p>
                 <div class="Thuonghieu1">
                     <div class="Nike">
-                        <a href="">
+                        <a href="SpGiayNike.html">
                             <img src="HinhAnh/Nike.jpg" style="width: 422px;height: 149px;">
                             <p style="text-align: left;color:black;font-size: 15px;margin-left: 10px;"><b>Giày đá banh Nike ></b> </p>
                         </a>
                     </div>
                     <div class="Adidas">
-                        <a href="">
+                        <a href="SpGiayAdidas.html">
                             <img src="HinhAnh/Adidas.jpg" style="width: 422px;height: 149px;">
                             <p style="text-align: left;color:black;font-size: 15px;margin-left: 10px;"><b>Giày đá banh Adidas ></b> </p>
                         </a> 
                     </div>
                     <div class="Puma">
-                        <a href="">
+                        <a href="SpGiayPuma.html">
                             <img src="HinhAnh/Puma.jpg" style="width: 422px;height: 149px;">
                             <p style="text-align: left;color:black;font-size: 15px;margin-left: 10px;"><b>Giày đá banh Puma ></b> </p>
                         </a>
@@ -308,7 +372,7 @@
             </div>
       </footer>
     </div>
-    
+    <a href="#" class="ToTop"><i class="fa-solid fa-circle-chevron-up fa-2xl"></i></a>
     
 </body>
 </html>

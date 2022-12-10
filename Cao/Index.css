@@ -199,7 +199,6 @@ ul.menu_TaiKhoan li  {
   user-select: none;
   -webkit-user-select: none;
 }
-/* Position the "next button" to the right */
 .next2 {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -208,12 +207,10 @@ ul.menu_TaiKhoan li  {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
-/* On hover, add a black background color with a little bit see-through */
 .prev2:hover,
 .next2:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* Container for image text */
 .caption-container2 {
   text-align: center;
   background-color: #3B3B3B;
@@ -225,12 +222,10 @@ ul.menu_TaiKhoan li  {
   display: table;
   clear: both;
 }
-/* Six columns side by side */
 .column2 {
   float: left;
   width: 16.66%;
 }
-/* Add a transparency effect for thumnbail images */
 .demo2 {
   opacity: 0.6;
 }
@@ -244,8 +239,6 @@ ul.menu_TaiKhoan li  {
 .BanDangTim{
   padding-top: 30px;
   width: 100%;
-  /* display: flex;
-  justify-content: space-around; */
   text-align: center;
 }
 .CacLoaiGiay{
@@ -321,3 +314,83 @@ footer{
     float: left;
   
   }
+  .ToTop{
+    color: rgb(212, 40, 40);
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
+  }
+  .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container3 {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+.slideshow-container3 img{
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev3, .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev3:hover, .next3:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
