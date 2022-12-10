@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+}
+li {
+    list-style: none;
+}
+.Top{
+    color:antiquewhite;
+    font-size: 15px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+.Mid{
+    padding: 15px 230px;
+    background-color: #3B3B3B;
+    display: flex;   
+}
+.Logo,.GioHang{
+    margin: auto;
+    float: left;
+}
+.TimKiem{
+    margin:  auto;
+    float: left;
+    display: flex;
+}
+
+.TimKiem .input{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.input button {
+    background-color: #fff;
+    border: none;
+}
+.input .otimkiem {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.input i {
+    margin-right: 10px;
+}
+.GioHang button{
+    width: 30px;
+    height: 30px;
+    background-color: #3B3B3B;
+    border: none;
+}
+.Bottom{
+    background-color: #3B3B3B;
+    padding: 10px 385px;
+}
+.Trangchu,.Giaybongda,.Phukien,.Cachchonsize{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.Bottom ul  {
+    display: flex;
+    justify-content: space-around;
+}
+ul.menu_TaiKhoan{
+  padding-left: 20px;
+  background-color: #333333;
+  position: absolute;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+ul.menu_TaiKhoan li  {
+  padding: 5px;
+  display: none;
+}
+.Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
+  display: block;
+}
+.End{
+    padding-top: 40px;
+    background-color: #333333;
+}
+footer{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+}
+.CamOn{
+    padding-top: 20px;
+    width: 31%;
+    float: left;
+  }
+  .Contact{
+    padding-top: 20px;
+    width: 30%;
+    float: left;
+  
+  }
+  .ToTop{
+    color: rgb(212, 40, 40);
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
+  }
+
+  .Boddy {
+
+    margin: 30px 245px;
+    color: #000;
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 10%);
+
+  }
+  .contentt li{
+    border-bottom: 2px solid #ddd;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 15px 15px;
+  }
+  .Boddy img {
+    width: 80%;
+  }
+
+  .bodyy{
+    padding: 30px 0px;
+    text-align: center;
+  }
+  .bodyy li{
+    margin: 15px 0px;
+  }
