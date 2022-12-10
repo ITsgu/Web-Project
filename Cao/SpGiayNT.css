@@ -195,3 +195,14 @@ footer{
     float: left;
   
   }
+
+  .ToTop{
+    color: rgb(212, 40, 40);
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
+  }
+
+  .Menu1 li{
+    margin-bottom: 15px;
+  }

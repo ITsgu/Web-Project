@@ -199,7 +199,6 @@ ul.menu_TaiKhoan li  {
   user-select: none;
   -webkit-user-select: none;
 }
-/* Position the "next button" to the right */
 .next2 {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -208,12 +207,10 @@ ul.menu_TaiKhoan li  {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
-/* On hover, add a black background color with a little bit see-through */
 .prev2:hover,
 .next2:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* Container for image text */
 .caption-container2 {
   text-align: center;
   background-color: #3B3B3B;
@@ -225,12 +222,10 @@ ul.menu_TaiKhoan li  {
   display: table;
   clear: both;
 }
-/* Six columns side by side */
 .column2 {
   float: left;
   width: 16.66%;
 }
-/* Add a transparency effect for thumnbail images */
 .demo2 {
   opacity: 0.6;
 }
@@ -244,8 +239,6 @@ ul.menu_TaiKhoan li  {
 .BanDangTim{
   padding-top: 30px;
   width: 100%;
-  /* display: flex;
-  justify-content: space-around; */
   text-align: center;
 }
 .CacLoaiGiay{
@@ -320,4 +313,10 @@ footer{
     width: 30%;
     float: left;
   
+  }
+  .ToTop{
+    color: rgb(212, 40, 40);
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
   }

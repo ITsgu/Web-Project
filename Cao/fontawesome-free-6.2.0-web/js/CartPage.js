@@ -24,7 +24,7 @@ function addCart(productPrice, productImg, productName){
             return
         }
     }
-    var trcontent = '<tr><td><div class="cart_info"><img src="'+productImg+'"><div><strong><span class="title">'+productName+'</span></strong><br><span class="prices">'+productPrice+'</span><br><span class="cart-delete"> Xoá </span></div></div></td><td><input type="number" value="1" min="1"></td><td>'+productPrice+'</td></tr>'
+    var trcontent = '<tr><td><div class="cart_info"><img src="'+productImg+'"><div><strong><span class="title">'+productName+'</span></strong><br><span class="prices">'+productPrice+'</span><br><span class="cart-delete" style="color:red"> Xoá </span></div></div></td><td><input type="number" value="1" min="1"></td><td>'+productPrice+'</td></tr>'
     addtr.innerHTML = trcontent // Nội dung của nó là trcontent 
     var cartTable = document.querySelector("tbody")
     //console.log(cartTable)
