@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+}
+
+.row {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 45%;
+    margin-right: 60px;
+    /* margin-top: 30px; */
+}
+
+.slider {
+    height: 80vh;
+    display: flex;
+}
+
+.product img {
+    height: 11.9vh;
+    width: 10vh;
+    box-shadow: 0 0 7px #d06c14;
+
+    margin-bottom: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    border: #555;
+    border-radius: 5px;
+    margin-right: 10%;
+    padding: 2 2px;
+}
+
+.product img:hover {
+    opacity: 1;
+}
+
+
+.preview img {
+    height: 80%;
+    box-shadow: 0 0 7px #d06c14;
+    border-radius: 20px;
+    margin-right: 10%;
+    padding: 2 2px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.brand {
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-left: 10%;
+
+}
+
+h2 {
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 2 px;
+    margin-left: 10%;
+
+}
+
+.rating {
+    display: flex;
+    height: 15px;
+    margin-left: 10%;
+
+}
+
+.rating .fa {
+    color: #008000;
+}
+
+.price {
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 10%;
+
+}
+
+input {
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+button .fa {
+    margin-right: 10px;
+}
+
+.related {
+    width: 90%;
+    margin: 2 auto 20px;
+}
+
+.related .row {
+    width: 100%;
+    height: auto;
+}
+
+.columns {
+    flex-basis: 22%;
+    height: 100%;
+}
+
+.items img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+}
+.items:hover img {
+    transform: scale(1.1);
+}
+
+.details {
+    margin-top: 20px;
+
+}
+
+.details p {
+    font-size: 10px;
+    margin-bottom: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details .rating {
+    margin: 10px 0;
+}
