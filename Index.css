@@ -1,0 +1,395 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+}
+li {
+    list-style: none;
+}
+.Top{
+    color:antiquewhite;
+    font-size: 15px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+.Mid{
+    padding: 15px 230px;
+    background-color: #3B3B3B;
+    display: flex;   
+}
+.Logo,.GioHang{
+    margin: auto;
+    float: left;
+}
+.TimKiem{
+    margin:  auto;
+    float: left;
+    display: flex;
+}
+
+.TimKiem .input{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.input button {
+    background-color: #fff;
+    border: none;
+}
+.input .otimkiem {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.input i {
+    margin-right: 10px;
+}
+.GioHang button{
+    width: 30px;
+    height: 30px;
+    background-color: #3B3B3B;
+    border: none;
+}
+.Bottom{
+    background-color: #3B3B3B;
+    padding: 10px 385px;
+}
+.Trangchu,.Giaybongda,.Phukien,.Cachchonsize{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.Bottom ul  {
+    display: flex;
+    justify-content: space-around;
+}
+ul.menu_TaiKhoan{
+  padding-left: 20px;
+  background-color: #333333;
+  position: absolute;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+ul.menu_TaiKhoan li  {
+  padding: 5px;
+  display: none;
+}
+.Top ul li.TaiKhoan:hover ul.menu_TaiKhoan li {
+  display: block;
+}
+.boddy{
+    margin: 0px 200px;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+.SaleHot{
+    display: flex;
+    justify-content: space-between;
+}
+.Sale{
+    position: relative;
+    text-align: center;
+    width: 45%;
+    float:left;
+}
+.Hot{
+    text-align: center;
+    width: 45%;
+    float:left; 
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  /* -webkit-user-select: none; */
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #3B3B3B;
+  padding: 2px 16px;
+  color: antiquewhite;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor2 {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev2 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.caption-container2 {
+  text-align: center;
+  background-color: #3B3B3B;
+  padding: 2px 16px;
+  color: antiquewhite;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column2 {
+  float: left;
+  width: 16.66%;
+}
+.demo2 {
+  opacity: 0.6;
+}
+.active2,
+.demo2:hover {
+  opacity: 1;
+}
+.boddy{
+  color: #3B3B3B;
+}
+.BanDangTim{
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.CacLoaiGiay{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.GiayTN{
+  float: left;
+  width: 315px;
+  height: 300px;
+}
+.GiayNT{
+  float: left;
+  width: 315px;
+  height: 300px;
+}
+.GiayFS{
+  float: left;
+  width: 315px;
+  height: 300px;
+}
+
+.Thuonghieu{
+  padding-top:90px;
+  width: 100%;
+  text-align: center;
+}
+.Thuonghieu1{
+  padding-top: 30px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+.Nike{
+
+  float: left;
+  width: 425px;
+  height: 150px;
+}
+.Adidas{
+  float: left;
+  width: 425px;
+  height: 150px;
+}
+.Puma{
+  float: left;
+  width: 425px;
+  height: 150px;
+}
+.End{
+    padding-top: 40px;
+    background-color: #333333;
+}
+footer{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+}
+.CamOn{
+    padding-top: 20px;
+    width: 31%;
+    float: left;
+  }
+  .Contact{
+    padding-top: 20px;
+    width: 30%;
+    float: left;  
+  }
+  .ToTop{
+    color: rgb(212, 40, 40);
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
+  }
+  .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container3 {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+.slideshow-container3 img{
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev3, .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev3:hover, .next3:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
