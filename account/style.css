@@ -105,10 +105,10 @@ input[type="radio"] {
   color: #000;
 }
 
-#login:checked~label.login {
+/* #login:checked~label.login {
   cursor: default;
   user-select: none;
-}
+} */
 
 .wrapper .form-container {
   width: 100%;
@@ -214,3 +214,4 @@ form .btn input[type="submit"] {
   font-weight: 500;
   cursor: pointer;
 }
+
